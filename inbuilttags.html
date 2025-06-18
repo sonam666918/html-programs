@@ -1,0 +1,57 @@
+<html>
+    <body>
+        <style>
+            ul li:first-child{
+                background-color: red;
+            }
+            ul li:nth-child(even){
+                background-color: green;
+            }
+            ul li:last-child{
+                background-color: blue;
+            }
+            
+            ul li:hover {
+                background-color: lightblue;
+            }   
+            input:focus {
+                background-color: yellow;
+            }
+            input:hover {
+                background-color: lightgreen;
+            }
+          /*  h3::before{
+                content: "hlwww";
+                color: salmon;
+            }
+            h3::after{
+                content: "byeee";
+                color:bisque;
+            }*/
+          /*  h3::before{
+                content: "";
+                width:10px;
+                height: 10px;
+                display: inline-block;
+                background-color: red;
+            }*/
+            h3::after{
+                content:"😎";
+            }
+            h3::before{
+                content: "👋";
+            }
+        </style>
+        <h3>hyyyy</h3>
+
+        <input type="text" placeholder="Focus on me!">
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+        </ul>
+
+    </body>
+</html>
