@@ -1,0 +1,26 @@
+#parent{
+    margin: 10px;
+    height: 300px;
+    width: 250px;
+     border-radius: 11px;
+    background-color:whitesmoke;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative
+}
+
+#child-b{
+    height: 50%;
+    width: 100%;
+
+}
+#child-a{
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    
+}
+#child-a img{
+    width: 100%;
+    height: 100%;
+    
+}
