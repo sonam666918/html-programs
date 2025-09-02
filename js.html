@@ -6,13 +6,72 @@
         // let a=5
        // const a=5
         //a()
-        let a =5
+
+       /* let a =5
         function sum(){
             a+=5
             return a
         }
         console.log(sum())
-        console.log(sum())
-        </script>
+        console.log(sum())*/
+
+      /*let arr=[2,5,2,6,8]
+      arr.pop()
+      arr.push(11)
+      arr.unshift(101)
+      arr.shift()
+      console.log(arr);*/
+
+    /*  function outer(){
+        function inner(){
+            console.log("inner");
+        }
+        return inner
+      }
+      let a=outer()
+        a()*/
+
+
+       // console.log(typeof(typeof(true)))
+        
+
+     //   let arr=[7,"hiiii",true]
+
+    /* let arr =[ 1,2,3,"hii","hello"    ]
+     function getString(i){
+      return typeof i =="string"
+
+     }
+     function getNumber(i){
+      return typeof i == "number"
+     }
+
+     function getFun(arr,fn){
+      let res=[]
+      for(let i of arr){
+        if(fn(i)){
+          res.push(i)
+        }
+      }
+      return res
+
+     }
+
+     console.log(getFun(arr,getString));
+     console.log(getFun(arr,getNumber));*/
+
+      function outer(){
+      let user="sonam"
+      function inner(){
+        console.log(user);
+      }
+      return inner
+     }
+     let a = outer()
+     a() 
+
+     </script>
+
+      
     </body>
 </html>
