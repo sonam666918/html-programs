@@ -60,6 +60,8 @@
      console.log(getFun(arr,getString));
      console.log(getFun(arr,getNumber));*/
 
+
+     /*
       function outer(){
       let user="sonam"
       function inner(){
@@ -69,9 +71,66 @@
      }
      let a = outer()
      a() 
+      */
+
+      /*setTimeout(()=>{
+        console.log("hii")
+      },3000)
+
+      setInterval(()=>{
+        console.log("hello");
+      },2000)*/
+
+     /* for(let i =1;i<=5;i++){
+        setTimeout(()=>{
+          console.log(i);
+        },i*1000)
+      }*/
+      
+    /*  let obj={
+        id:1,
+        name:"hello",
+        sum:function(){
+          
+          console.log(this);
+        },
+      }
+        id:1,
+        name:"hello",
+        sum()=>{
+          console.log(this)
+        }
+       obj.sum()*/
+
+      
+
+      
+    /*  let obj
+      a=5
+      console.log(this.a);
+      console.log(window);*/
+
+     /* let arr=[1,23,4241]
+      console.log(arr)*/
+      let arr=[1,2,3,4,5]
+
+
+      Array.prototype.myMap=function(callback){
+        let res=[]
+        for(let i=0;i<this.length;i++){
+          res.push(callback(this[i],i))
+        }
+        return res
+      }
+
+      let data= arr.myMap( (a,b,c)=>{
+        return c
+      })
+      console.log(data);
+      
+
 
      </script>
 
-      
     </body>
 </html>
