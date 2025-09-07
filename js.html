@@ -112,7 +112,7 @@
 
      /* let arr=[1,23,4241]
       console.log(arr)*/
-      let arr=[1,2,3,4,5]
+      /*let arr=[1,2,3,4,5]
 
 
       Array.prototype.myMap=function(callback){
@@ -126,7 +126,64 @@
       let data= arr.myMap( (a,b,c)=>{
         return c
       })
-      console.log(data);
+      console.log(data);*/
+    
+    
+    /*  setTimeout(()=>{
+      console.log("a");
+
+     },1000)
+
+     setTimeout(()=>{
+      console.log("d");
+     },0)
+
+     setTimeout(()=>{
+      console.log("c");
+     },3000)
+
+     setTimeout(()=>{
+      console.log("b");
+     },2000)
+     */
+
+     function step1(fn){
+      setTimeout(()=>{
+        console.log("select a photo");
+      },5000)
+      fn()
+     }
+     
+     function step2(fn){
+      setTimeout(()=>{
+        console.log("caption");
+      },4000)
+      fn()
+     }
+
+     function step3(fn){
+      setTimeout(()=>{
+        console.log("filterrr");
+      },3000)
+      fn()
+     }
+
+      function step4(){
+      setTimeout(()=>{
+        console.log("post");
+      },1000)
+      
+     }
+
+
+    step1(()=>{
+      step2(()=>{
+        step3(()=>{
+          step4()
+        })
+      })
+    })
+
       
 
 

@@ -33,18 +33,46 @@
     border-radius: 50%;
 }*/
 
-#one{
-    height:50%;
-    width:100%;
-    background-color: white;
-    border:2px solid black;
-    padding: 5px 5px 5px 5px;
-}
 
-#two{
+*{
+    margin: 0;
+    padding: 0;
     color: white;
     
-    
-    background-color: black;
+}
 
+#navbar{
+   height: 60px;
+   background-color: #0f1111;
+}
+
+#logo{
+    font-size: 25px;
+    color: #f08804;
+
+}
+button{
+    background-color:  #f08804;
+}
+a{
+    margin-right: 180px;
+    text-decoration: none;
+}
+
+
+.contentbox{
+    height:100px;
+    width:100px;
+    border: #0f1111 solid 2px;
+    display: inline-block;
+}
+
+footer{
+    background-color: #0f1111;
+    height: 100px;
+    text-align: center;
+}
+
+#contentbox{
+    height: 700px;
 }
