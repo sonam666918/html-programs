@@ -1,0 +1,50 @@
+/*#world{
+    background-color: blue;
+}*/
+
+/*.class1{
+    color: red;
+}
+.class2{
+    color: green;
+}
+.class3{
+    color: orange;
+}*/
+
+/*h2{
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Times New Roman';
+}*/
+
+/*#first{
+    text-size:25px;
+}
+#second{
+    text-size:10px;
+}*/
+
+/*div{
+    height: 100px;
+    width:100px;
+    background-color: green;
+    border: 2px solid black;
+    border-radius: 50%;
+}*/
+
+#one{
+    height:50%;
+    width:100%;
+    background-color: white;
+    border:2px solid black;
+    padding: 5px 5px 5px 5px;
+}
+
+#two{
+    color: white;
+    
+    
+    background-color: black;
+
+}
