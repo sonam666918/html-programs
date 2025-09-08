@@ -146,7 +146,7 @@
       console.log("b");
      },2000)
      */
-
+    /*
      function step1(fn){
       setTimeout(()=>{
         console.log("select a photo");
@@ -183,7 +183,29 @@
         })
       })
     })
+    */
 
+    
+      let promise = new Promise((res,rej)=>{
+      rej()
+     // rej()
+    /*by if else condition 
+    let a=true
+     if(a){
+      res()
+     }else{
+      rej()
+     }*/
+
+
+
+      })
+      promise.then(()=>{
+        console.log("done")
+      }).catch(()=>{
+        console.log("err")
+      })
+      //  console.log(promise,"hyyyy")
       
 
 
