@@ -186,10 +186,10 @@
     */
 
     
-      let promise = new Promise((res,rej)=>{
+     /* let promise = new Promise((res,rej)=>{
       rej()
      // rej()
-    /*by if else condition 
+    by if else condition 
     let a=true
      if(a){
       res()
@@ -198,7 +198,7 @@
      }*/
 
 
-
+     /* then and catch feature
       })
       promise.then(()=>{
         console.log("done")
@@ -207,8 +207,61 @@
       })
       //  console.log(promise,"hyyyy")
       
+     */
+    /*
+     let step1= function(){
+      return new Promise((res,rej)=>{
+        setTimeout(()=>{
+          console.log("select a photo");
+          res()
+        },4000)
+      })
+     }
+     let step2= function(){
+      return new Promise((res,rej)=>{
+        setTimeout(()=>{
+          console.log("captionnn");
+          res()
+        },2000)
+      })
+     }
+      let step3= function(){
+        return new Promise((res,rej)=>{
+          setTimeout(()=>{
+            console.log("filterrrr");
+            res()
+          },5000)
+        })
+      }
+      let step4= function(){
+        return new Promise((res,rej)=>{
+          setTimeout(()=>{
+            console.log("posttt");
+            res()
+          },4000)
+        })
+      }
+       calling for function
+     step1().then(()=>{
+      return step2().then(()=>{
+        return step3().then(()=>{
+          return step4()
+        })
+        
+      })
+     })
+    
+      // using async await
+     async function call() {
+       await step1()
+     await  step2()
+     await step3()
+      await step4()
+      
+     }
+     call()*/
 
-
+     
      </script>
 
     </body>
