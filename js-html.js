@@ -37,10 +37,30 @@ setInterval(function(){
     imageEl.setAttribute('src',arr[num]);
     num= (num + 1) % arr.length;
 },2000);*/
-
+/*
 let body = document.querySelector('body');
 function fun1(){
    // console.log("button clicked")
    body.style.backgroundColor="red"
     
-}
+}*/
+ 
+
+let inp=document.querySelector("form")
+
+
+let form2 = document.querySelector("#form2")
+form2.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    let saveData = localStorage.getItem("formdata")
+    let dataObj= JSON.parse(saveData) 
+    let loginObj={
+        email:form2[0].value,
+        pass:form2[1].value
+    }
+    if(dataObj.email==loginObj.email && dataObj.pass==loginObj.pass){
+        promt("login donee")
+    }else{
+        promt("error")
+    }
+})
