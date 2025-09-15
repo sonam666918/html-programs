@@ -13,4 +13,10 @@ btn.addEventListener("click",()=>{
    li.innerText=data
    ul.append(li)
    inp.value=" "
+   li.addEventListener("click",()=>{
+    li.remove()
+})
+
+localStorage.setItem("todo",ul.innerHTML)
+
 })
