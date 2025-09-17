@@ -3,7 +3,6 @@ let pen =  canvas.getContext("2d")
 //pen.fillStyle="red"
 //pen.fillRect(50,50,50,50)
 //pen.clearRect(50,150,50,50)
-
 let snakecells=[[0,0],[50,0]]
 let  cell=50
 function draw(){

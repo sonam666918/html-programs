@@ -85,7 +85,7 @@ div{
     position:fixed;
     right: 0;
 }*/
-
+/*
 .navbar{
     
     background-color: hotpink;
@@ -105,4 +105,53 @@ a{
     color: black;
     
 
+}
+    */
+    *{
+        text-align: center;
+    }
+
+    div{
+        border: 2px solid black;
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        
+    }
+    #boxes{
+        height: 600px;
+        width: 800px;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: row;
+       justify-content: center;
+       /*flex-wrap: wrap;*/
+       align-items: center;
+       /*align-content: center;*/
+       align-self: flex-end;
+    }
+#box1{
+    
+    background-color: palevioletred;
+    flex-grow: 1;
+}
+#box2{
+    
+    background-color: lightseagreen;
+    height: 250px;;
+    flex-grow: 2;
+}
+#box3{
+
+    background-color: rgb(194, 88, 88);
+    
+}
+#box4{
+    
+    background-color: rgb(201, 201, 29);
+    
+}
+#box5{
+   
+    background-color: purple;
 }
