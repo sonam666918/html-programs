@@ -15,16 +15,29 @@ const App = () => {
 }*/
 
 import React, { useEffect, useState } from "react";
-const Home = () => {
+/*const Home = () => {
     let [count,SetCount] = useState(0)
 
     useEffect(()=>{
         console.log("hello")
     },[])
+    
     return(
         <div>
             <h3>{count}</h3>
             <button onClick= {()=>SetCount(count+1)}>click</button>
         </div>
     )
+}*/
+
+import './App.css'
+const Home = () => {
+    let [apiData, setApiData] = useState([])
+
+    useEffect(() => {
+        fetch("https://jsondummymenu.com/api/restaurant/1/menu")
+            .then((response) => response.json())
+            .then((data) => setApiData(data))
+    }, [])
+
 }
